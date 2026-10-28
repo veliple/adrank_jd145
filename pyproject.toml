@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "veliple-adrank_jd145"
+version = "0.1.0"
+description = "按结构键把条目聚类，标出广告召回与排序工程师·长工具链的上下文回收上的同组项与各组的代表样本"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "veliple" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://veliple.github.io"
+Repository = "https://github.com/veliple/adrank_jd145"
+Issues = "https://github.com/veliple/adrank_jd145/issues"
+
+[project.scripts]
+adrank_jd145 = "adrank_jd145:main"
+
+[tool.setuptools]
+py-modules = ["adrank_jd145"]
